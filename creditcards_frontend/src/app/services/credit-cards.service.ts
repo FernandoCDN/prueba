@@ -15,7 +15,7 @@ export class CreditCardsService {
     
     params = params.append('client', clientIdentification);
 
-    return this.http.get("http://localhost:8081/scotiabank/api/CreditRiskApplication/getClientsRiskEvaluationByProduct",
+    return this.http.get("http://localhost:8084/Carvajal/crud/wallet/creditcards/api/creditcards/get/getbyId",
     {
       params: params
     });
@@ -25,7 +25,7 @@ export class CreditCardsService {
   {
     let params = new HttpParams();
     
-    return this.http.get("http://localhost:8081/Carvajal/creditcards/api/cards/getAll",
+    return this.http.get("http://localhost:8084/Carvajal/crud/wallet/creditcards/api/creditcards/get/getAll",
     {
       params: params
     });
