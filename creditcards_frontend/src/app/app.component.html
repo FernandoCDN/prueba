@@ -1,0 +1,47 @@
+<router-outlet></router-outlet>
+
+<section class="border border-secondary">
+
+  <h2>Cliente</h2>
+
+  <div class="inputs">
+  
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Client Identification</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="clientIdentification" [(ngModel)]="clientIdentification">
+    </div>
+
+    <button type="button" class="btn btn-secondary" (click)="search()">Search</button>
+
+  </div>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Bank</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Card Number</th>
+        <th scope="col">CVC</th>
+        <th scope="col">ValidThru</th>
+        <th scope="col">Client</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Data">
+        <th scope="row">1</th>
+        <td>{{item.bank}}</td>
+        <td>{{item.brand}}</td>
+        <td>{{item.number}}</td>
+        <td>{{item.cvc}}</td>
+        <td>{{item.validThru}}</td>
+        <td>{{item.owner.identification}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+</section>
+

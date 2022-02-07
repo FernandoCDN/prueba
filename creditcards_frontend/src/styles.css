@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+header
+{
+    height: 18vh;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+main
+{
+    height: 72vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+footer
+{
+    height: 10vh;
+    background-color: #753BBD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+}
+
+.logo-carvajal
+{
+    height: 100px;
+}
+
+.Title
+{
+    color: black;
+}
